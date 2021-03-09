@@ -60,5 +60,6 @@
     "*.wxss": "stylelint --fix",
     "*.wxml": "prettier --parser html --write",
     "*.wxs": "prettier --parser babel-flow --write"
-  }
+  },
+  "dependencies": {}
 }
