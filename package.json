@@ -60,5 +60,11 @@
     "*.wxss": "stylelint --fix",
     "*.wxml": "prettier --parser html --write",
     "*.wxs": "prettier --parser babel-flow --write"
+  },
+  "dependencies": {
+    "install": "^0.13.0",
+    "npm": "^7.6.1",
+    "scss": "^0.2.4",
+    "wx-server-sdk": "^2.4.0"
   }
 }
