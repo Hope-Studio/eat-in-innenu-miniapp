@@ -61,5 +61,7 @@
     "*.wxml": "prettier --parser html --write",
     "*.wxs": "prettier --parser babel-flow --write"
   },
-  "dependencies": {}
+  "dependencies": {
+    "wx-server-sdk": "^2.4.0"
+  }
 }

@@ -1,0 +1,54 @@
+<wxs src="./index.wxs" module="content" />
+<!-- 导航栏 -->
+<view class="navbar placeholder" style="margin-top: {{statusBarHeight}}px;">
+  <view class="navbar-wrapper" style="padding-top: {{statusBarHeight}}px;">
+    <view class="title">
+      <view class="toggle" catch:tap="{{content.onToggle}}">
+        <text>分类</text>
+        <image class="arrow-icon" src="icon/arrow-down.svg" />
+      </view>
+      <navigator
+        class="search"
+        hover-class="none"
+        url="/detail/search/search?search=true"
+      >
+        <icon color="#000" size="20" type="search" />搜索菜品
+      </navigator>
+    </view>
+    <view class="tags">
+      <view wx:for="{{content.tags}}" wx:key="*this" class="tag-wrapper">
+        <view class="tag-ctn">
+          <navigator
+            wx:for="{{item}}"
+            wx:for-item="tag"
+            wx:key="*this"
+            class="tag"
+            hover-class="none"
+            url="/detail/search/search?tag={{tag}}"
+          >
+            {{tag}}
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 轮播图 -->
+<swiper class="swiper" autoplay>
+  <swiper-item wx:for="{{content.imgs}}" wx:key="*this">
+    <image mode="aspectFill" src="{{item}}" />
+  </swiper-item>
+</swiper>
+<!-- 网格 -->
+<view class="grid-wrapper">
+  <navigator
+    wx:for="{{content.grid}}"
+    wx:key="type"
+    class="grid"
+    hover-class="hover"
+    url="{{item.url || ('/detail/search/search?tag=' + (item.tag || item.type))}}"
+  >
+    <image class="icon" src="./icon/{{item.icon}}.svg" />
+    <view>{{item.type}}</view>
+  </navigator>
+</view>

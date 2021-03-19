@@ -1,6 +1,6 @@
 {
-  "entryPagePath": "pages/main/main",
-  "pages": ["pages/main/main"],
+  "entryPagePath": "pages/tab/index/index",
+  "pages": ["pages/main/main", "pages/tab/index/index" ],
   "window": {
     "navigationBarBackgroundColor": "@navBgColor",
     "navigationBarTextStyle": "@navTextStyle",
@@ -28,5 +28,7 @@
   "themeLocation": "style/theme.json",
   "sitemapLocation": "sitemap.json",
   "lazyCodeLoading": "requiredComponents",
-  "singlePage": { "navigationBarFit": "float" }
+  "singlePage": {
+    "navigationBarFit": "float"
+  }
 }
