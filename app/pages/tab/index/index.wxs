@@ -1,16 +1,31 @@
 module.exports = {
+  statusBarHeight: 43,
   grid: [
-    { type: "饭菜", tag: "饭/菜", icon: "rice" },
-    { type: "汤面", tag: "面/粉", icon: "noodle" },
-    { type: "粥", icon: "porridge" },
-    { type: "肉类", icon: "meat" },
-    { type: "面食", icon: "flour" },
+    {
+      type: "饭菜",
+      tag: "饭/菜",
+      icon: "rice",
+    },
+    {
+      type: "汤面",
+      tag: "面/粉",
+      icon: "noodle",
+    },
+    {
+      type: "粥",
+      icon: "porridge",
+    },
+    {
+      type: "肉类",
+      icon: "meat",
+    },
+    {
+      type: "面食",
+      icon: "flour",
+    },
   ],
   /** 轮播图片 */
-  imgs: [
-    "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1584444172229&di=59165737b908cefac2a59248ae0f9c37&imgtype=0&src=http%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20161107%2F933cd537e5a541c0b72fc5eb756a455b_th.jpeg",
-    "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1584444285216&di=e22058000f55353ac2859e84d1074fec&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2Ff%2F57b158b5bcdde.jpg",
-  ],
+  imgs: [""],
   tags: [
     /** 口味 */
     ["酸", "甜", "辣", "咸", "少油少盐"],

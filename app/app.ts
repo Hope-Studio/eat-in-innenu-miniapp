@@ -20,6 +20,7 @@ App({
   globalData: ({
     version,
     openid: "",
+    foodlist: "",
   } as unknown) as GlobalData,
 
   onLaunch() {

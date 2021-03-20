@@ -1,7 +1,13 @@
 <wxs src="./index.wxs" module="content" />
 <!-- 导航栏 -->
-<view class="navbar placeholder" style="margin-top: {{statusBarHeight}}px;">
-  <view class="navbar-wrapper" style="padding-top: {{statusBarHeight}}px;">
+<view
+  class="navbar placeholder"
+  style="margin-top: {{content.statusBarHeight}}px;"
+>
+  <view
+    class="navbar-wrapper"
+    style="padding-top: {{content.statusBarHeight}}px;"
+  >
     <view class="title">
       <view class="toggle" catch:tap="{{content.onToggle}}">
         <text>分类</text>
@@ -34,7 +40,11 @@
   </view>
 </view>
 <!-- 轮播图 -->
-<swiper class="swiper" autoplay>
+<swiper
+  class="swiper"
+  autoplay
+  style="padding-top: {{content.statusBarHeight}}px;"
+>
   <swiper-item wx:for="{{content.imgs}}" wx:key="*this">
     <image mode="aspectFill" src="{{item}}" />
   </swiper-item>
@@ -52,3 +62,5 @@
     <view>{{item.type}}</view>
   </navigator>
 </view>
+<!-- 色子 -->
+<view style="width: 750rpx; height: 350px; background: grey"></view>
