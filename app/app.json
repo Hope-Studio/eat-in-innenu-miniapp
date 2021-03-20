@@ -1,6 +1,6 @@
 {
   "entryPagePath": "pages/tab/index/index",
-  "pages": ["pages/main/main", "pages/tab/index/index" ],
+  "pages": ["pages/main/main", "pages/tab/index/index"],
   "window": {
     "navigationBarBackgroundColor": "@navBgColor",
     "navigationBarTextStyle": "@navTextStyle",
@@ -9,7 +9,8 @@
     "backgroundTextStyle": "@bgTxtStyle",
     "backgroundColorTop": "@bgColorTop",
     "backgroundColorBottom": "@bgColorBottom",
-    "pageOrientation": "portrait"
+    "pageOrientation": "portrait",
+    "navigationStyle": "custom"
   },
   "networkTimeout": {
     "request": 5000,
